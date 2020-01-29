@@ -38,16 +38,6 @@ body {
     text-shadow: 2px 2px 2px black;
   }
   
-  /* The background color of the "testimonials" part */
-  .testimonials {
-    background-color: #eeeeee;
-  }
-  
-  /* The size of the testimonials images */
-  .media img {
-    width: 64px;
-    height: 64px;
-  }
   
   /* The footer */
   .footer img {
