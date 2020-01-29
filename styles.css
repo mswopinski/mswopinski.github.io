@@ -1,35 +1,55 @@
-h1, h2 {
-    color: purple;
-    font-size: 96px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    margin-left: 50px;
-    margin-right: 5px;
-}
-
-img {
-    height: 320px;
-}
-#first {
-    text-align: left;
-}
-/* #second {
-    text-align: right;
-} */
-.right {
-    text-align: right;
-}
-.tacos {
-    color: seagreen;
-}
-.big {
-    font-size: 32px;
-}
-p.tacos .big{
-    font-size: 48px
-}
-
-p {
-    text-align: center;
-    font-family: helvetica;
-}
+/* Typography */
+body {
+    /* Everything is Noto Sans */
+    font-family: 'Noto Sans', sans-serif;
+  }
+  /* Except we're using more specific rules to override the headlines */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bangers', cursive;
+  }
+  /* And the "logo" */
+  .navbar-brand {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 30px;
+  }
+  .navbar-brand img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  /* Navbar background color */
+  .navbar {
+    background-color:navy;
+  }
+  /* Jumbotron background and font styles */
+  /* Notice that I'm using all of the background CSS rules on the CSS cheat sheet */
+  .jumbotron {
+    /* Size  */
+    min-height: 500px;
+    /* Background */
+    background-attachment: fixed;
+    background-image: url(bigandlittlesmural.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    /* Fonts */
+    /* The text-shadow helps the white text stand out better on a darker background */
+    color: white;
+    text-shadow: 2px 2px 2px black;
+  }
+  
+  /* The background color of the "testimonials" part */
+  .testimonials {
+    background-color: #eeeeee;
+  }
+  
+  /* The size of the testimonials images */
+  .media img {
+    width: 64px;
+    height: 64px;
+  }
+  
+  /* The footer */
+  .footer img {
+    width: 100px;
+  }

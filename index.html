@@ -1,47 +1,123 @@
-<!DOCTYPE html>
+<!-- I started with the Bootstrap starter template  -->
+<!-- https://getbootstrap.com/docs/4.4/getting-started/introduction/#starter-template -->
+<!doctype html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags --> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
-    <title>Best 90s website in 2020</title>
-    <link   rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Noto+Sans&display=swap" rel="stylesheet">
 
-</head>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
-<body>
-    <h1>The KIEI 451 Website!</h1>
-    <h2>Best 90s website in 2020</h2>
-<table>
-    <tr>
-        <td>
-            <a href="index.html">Home</a>        
-        </td>
-        <td>
-            <a href="about.html">Our About Page</a>        
-        </td>
-    </tr>
-</table>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <p id="first">
-        This class is gonna be <em>soooooooooo</em> <strong>awesome</strong>!
-    </p>
+    <!-- My own CSS -->
+    <link rel="stylesheet" href="styles.css">
 
-    <p class="right tacos">
-        We have <span class="big">30 hours</span> to learn <strong>ALL THE THINGS</strong> &#128561 &#128561 &#128561
-    </p>
+    <title>Big & little's Chicago</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <!-- https://getbootstrap.com/docs/4.4/components/navbar -->
+    <!-- I'm using the "navbar-light" color scheme, and a custom background color, defined in my styles.css -->
+    <!-- Because the navbar has a "container" inside, it has gutters (spacing) on the left and right -->
+    <!-- https://getbootstrap.com/docs/4.4/components/navbar/#containers -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="bigandlittleslogo.png" class="d-inline-block align-middle">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <!-- The "ml-auto" means - set the left margin as high as you can, automatically -->
+          <!-- This causes the links to move to the right -->
+          <!-- https://getbootstrap.com/docs/4.4/utilities/flex/#auto-margins -->
+          <div class="navbar-nav mr-auto">
+            <a class="nav-item nav-link active" href="index.html">Home<span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="menus.html">Menus</a>
+          </div>
+          <div class="navbar-nav ml-auto">
+            <a class="btn btn-outline-warning" href="contact.html">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </nav>
 
-    <p class="right">
-        So far we've learned <code>HTML</code>.
-        <br>
-        <span class="big">Our websites</span> look like they're from <a
-            href="https://www.bustle.com/articles/159061-10-things-we-genuinely-miss-about-90s-internet-because-nostalgia-runs-deep">the
-            90s</a>.
-    </p>
-
-    <div class="right tacos">
-        <span class="big">My images:</span>
-        <img src="baby_yoda.gif">
-        <img src="blackhawks_logo.png">
+    <!-- Full width Jumbotron -->
+    <!-- https://getbootstrap.com/docs/4.4/components/jumbotron/ -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+          <h1 class="display-4">Big & little's Restaurant</h1 class="display-4">
+          <p class="lead">Serving tasty eats in a neighborhood near you</p>
+        
+      </div>
     </div>
-</body>
 
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <h2>Locations</h2>
+        </div>
+      </div>
+      <!-- An example of Bootstrap's spacing utility classes -->
+      <!-- https://getbootstrap.com/docs/4.4/utilities/spacing/#how-it-works -->
+      <!-- The "mt-4" gives you more margin on top, responsively -->
+      <div class="row mt-4">
+        <div class="col-sm-3 text-center">
+          <h3>River North</h3>
+          <p>860 N Orleans St, Chicago, IL 60610</p>
+          <p>(312) 943-0000</p>
+          <a class="btn btn-info btn-lg" href="menus.html" role="button">Menu</a>
+        </div>
+        <div class="col-sm-3 text-center">
+          <h3>Lakeview</h3>
+          <p>1034 W Belmont Ave, Chicago, IL 60657</p>
+          <p>(773) 857-6677</p>
+          <a class="btn btn-info btn-lg" href="menus.html" role="button">Menu</a>
+        </div>
+        <div class="col-sm-3 text-center">
+          <h3>Wicker Park</h3>
+          <p>1310 N Milwaukee Ave, Chicago, IL 60622</p>
+          <p>(773) 698-7777</p>
+          <a class="btn btn-info btn-lg" href="menus.html" role="button">Menu</a>
+        </div>
+        <div class="col-sm-3 text-center">
+          <h3>Logan Square</h3>
+          <p>3000 W Fullerton Ave, Chicago, IL 60647</p>
+          <p>(773) 687-9033</p>
+          <a class="btn btn-info btn-lg" href="menus.html" role="button">Menu</a>
+      </div>
+    </div>
+
+    <!-- Footer, just another grid, with a class added for custom styling -->
+    <div class="container footer">
+      <div class="row my-5">
+        <div class="col-sm-3">
+          <h6>Big & little's</h6>
+          <ul class="list-unstyled mt-3">
+            <li><a href="menus.html">Menus</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-4">
+          <h6>Established 2020</h6>
+          <p class="mt-3"><em>Website for educational purposes only.</em></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
 </html>
